@@ -3,7 +3,7 @@
 <head>
 <title>HTML</title>
 </head>
-<body>
+<body style="background-color:orange;">
 <!-- En los comentarios estaran las respuestas del HTML Quiz de W3SCHOOL-->
 
 <h1>HTML</h1>
@@ -11,7 +11,7 @@
 <!--Respuesta pregunta 1-->
 <p>HTML (HyperText Markup Language en ingles) es el lenguaje de marcado estandar para crear paginas web en cualquier editor de texto, es su estructura. Consta de una serie de elementos(HTML) que le dicen al navegador como mostrar el contenido por medio de las etiquetas.</p>
 <h2>Elemetnos HTML</h2>
-<p>Un elemento HTMl es el conjunto conformado por la etiqueta de inicio &lt;etiqueta&gt;, el contenido (h1, body, p, etc) y la etiqueta de cierre &lt;/etiqueta&gt;.El nombre de las etiqeutas puede ir tanto en &lt;minusculal&gt; como en &lt;MAYUSCULA&gt;</p>
+<p>Un elemento HTMl es el conjunto conformado por la etiqueta de inicio &lt;etiqueta&gt;, el contenido (h1, body, p, etc) y la etiqueta de cierre &lt;/etiqueta&gt;.El nombre de las etiqeutas puede ir tanto en &lt;minuscula&gt; como en &lt;MAYUSCULA&gt;</p>
 <p>A continuacion se mostrara los elementos HTML mas comunes.</p><br>
 <strong>&lt;!DOCTYPE html&gt;</strong>
 <p>Este elementos define que este archivo es un documento HTML.</p>
@@ -53,8 +53,134 @@ Los elementos HTML tienen atributos, estos muetran infroamcion adicional sobre l
   <p>Otro atributros de las imagenes son el width (ancho) y el height (largo) que sirve para dar indicar las medidas de estas propeidades. Ejmaplo width="253px" height="300"</p>
   <hr>
   <strong>Style</strong>
-  <p>Este atributo sirve para darle color, fuente, tamaño, etc a un elemento HTML. El codigo se escrib como si fuera una hoja de CSS Ejemplo style="color:red;"</p>
-  <p style="color: red, font-size: 100px;"
+  <p>Este atributo sirve para definir y cambiiar: </p>
+  <p style="color:red;">El color del texto style="color:red;".</p>
+  <p style="background-color:red;">El color del fondo de la pagina o elemento HTML style="background-color:red;".</p>
+  <p style="font-family:courier;"> La fuente del texto style="font-family:courier;".</p>
+  <p style="font-size:100px;">El tamaño del texto style="font-size:100px;".</p>
+  <p style="text-align:right;">La ubicacion del texto o elemento HTML style="text-align:right;".</p>
+  <hr>
+  <strong>lang</strong>
+  <p>Este atributo sirve para definir el idioma. Si el atributo se encuentra dentro de la etiqueta &lt;html&gt; indicara que toda la pagina estara en ese idioma.</p>
+  <code style="background-color:black;color:white;">&lt;html lang="en"&gt;</code>
+    <p>se puede especificar el pais: </p>
+    &lt;html lang="en-US"&gt;<br>
+    <sub style="background-color: blue;color:white;">En este caso se define como ingles el idioma y Estados Unidos el pais.</sub>
+  </p>
+  <p>Tambien se puede agregar este atributo a un elemento HTMl para espeficar el idiomaen ese elemento</p>
+  <p>Ejemplo:<code>&lt;h1 lang="en-US"&gt;</p></code>
+<strong>title</strong>
+  <!--Respuesta pregunta 2-->
+  <p>Este atributo sirve para dar una informacion extra sobre un elemento.Aparececomo un tooltip cuando el mouse se coloca sobre el elemento</p>
+  <p title="tooltip">Ejemplo</p>
+<h4>Notas y sugerencias</h4>
+<p>Al igual que los nombres de los elementos HTML, losatributospueden ir tanto enminuscula como en MAYUSCULA</p>
+<p>Se recomienda usar comillas ("") al uar citas</p>
+<p>Se puede usar tanto comillas simples(') como dobles("") para los valores el atributo. Si el texto ya tiene comillas se recoemida usar ambas</p>
+<p>Ejemplo: <code>&lt;p title="Harry 'el sucio' Potter"&gt;<br>
+  &lt;p title='Harry "el sucio" Potter'&gt;
+</code>
+<hr> 
+</section>
+<section>
+  <h2>Encabezados</h2>
+  <p>Los encabezados (headings) son titulos o subtitulos que se muestran en la pagina. La etiqueta para los encabezados son &lt;h1&gt; al &lt;h6&gt;.</p>
+  <div>Ejemplos: <br>
+    <h1>&lt;heading 1&gt;</h1>
+    <h2>&lt;heading 2&gt;</h2>
+    <h3>&lt;heading 3&gt;</h3>
+    <h4>&lt;heading 4&gt;</h4>
+    <h5>&lt;heading 5&gt;</h5>
+    <h6>&lt;heading 6&gt;</h6>
+  <p>El encabezado mas importante es el &lt;h1&gt;, solo puede haber uno por pagina. Cuando mas grande sea el numero del encabezado, por defecto, el texto va a ser mas chico. Se puede modificar con el atributo style o con CSS</p>
+</section>
+  <hr>
+<section>
+  <h2>Parrafos</h2>
+    <p>El elemento HTML&lt;p&gt; define un parrafo, siempre comienza en una nueva linea y es un bloque de texto.</p>
+  <p>&lt;p&gt;Los parrafos se pueden escribir asi, pero si presiono enter, el editor de texto va a mostrar este parrafo todo junto en la misma linea. Por ejemplo aqui empece un nuevo parrafo pero no puse la etiqueta de cierre y por eso se ve todo en la misma linea&lt;/p&gt;</p>
+  <p>&lt;p&gt;
+  <p>Los parrafos se pueden<br>
+  escribir asi.</p>
+  &lt;/p&gt;</p>
+  <p>&lt;p&gt;Si cada parafo tiene&lt;/p&gt;</p>
+  <p>&lt;p&gt;etiqueta de apertura y cierre&lt;/p&gt;</p>
+    <p>&lt;p&gt;El texto se vera asi.&lt;/p&gt;</p>
+  <p>&lt;p&gt;Si al escri&#160;&#160;bir un parrafo&#160;&#160;dejo espacios&#160; &#160;	&#160; vacios, el 	&#160;	&#160;navegador&#160;&#160; los elimina.<br>Por mas&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160;grande que&#160; &#160;sea.&lt;/p&gt;</p>
+  <h2>&lt;pre&gt;</h2>
+  <p>Si escribo las estrofa de uan cacnion o poema sin poner las etiquetas de apertura y cierre, el texto se mostrara en una sola linea. La solucion a este prola es la etiqueta &lt;pre&gt;</p>
+  <pre>
+Una y otra vez cada ruta que hay
+Sendas que tome me regresarán
+Al lugar aquel dónde anhelo estar
+Y no hay que ir jamás
+  </pre>
+  <p>Como se puede ver esta etiqueta conserva los espacios como los saltos de linea (cambia la fuente a Courier generalmente), esta etiqeuta muestra contenido con formato previo.</p>
+  <hr>
+  <strong>&lt;hr&gt;</strong>
+  <p>el elemento &lt;hr&gt; es una regla horizaontal que generlamente se usa para separar una seccion de otra</p>
+  <p>Ejemplo: <hr></p>
+<strong>&lt;br&gt;</strong>
+<p>Este elemento define los saltos&lt;br&gt;<br>de linea.<br> <strong>Nota: Tanto &lt;br&gt; como &lt;hr&gt; son etiquetas vacias por lo tanto no requieren etiqueta de cierre.</strong></p>
+</section>
+<hr>
+<section>
+  <h2>Formato de texto HTML</h2>
+  <p>Las siguientes elementos HTML sirven para darle importancia a un texto, ya sea resaltandolo, subrayando, cambiando el tañama o en negrita.</p>
+  <p><b>El elemento HTML &lt;b&gt; muestra el texto en negrita (bold text en ingles) sin importancia extra.</b></p>
+  <p><strong>El elemento HTML &lt;strong&gt; muestra el texto generlamente en negrita (bold text en ingles) y lo remarca como importante.</strong></p>
+  <p><i>El elemento HTML &lt;i&gt; muestra el texto en cursiva (italic). Se suele usar para indicar un termino tecnico, una palabra o frase en otro idioma, un pensamiento, el nombre de una embarcacion, etc.</i></p>
+  <p><em>El elemento HTML &lt;em&gt; muestra el texto enfatizado(emphasized) y se muestra en cursiva (italic). Se suele usar para indicar lectura con otro enfasis.</em></p>
+  <p><small>El elemento HTML &lt;small&gt; muestra el texto pequeño.</small></p>
+  <p><mark>El elemento HTML &lt;mark&gt; resalta el texto.</mark></p>
+  <p><del>El elemento HTML &lt;del&gt; define el texto que fue eliminado (delete) de un documento. Los navegadores lo muentran tachando el texto con una linea.</del></p>
+  <p><ins>El elemento HTML &lt;ins&gt; define el texto que fue insertado en un documento. Los navegadores lo muentran subrayando el texto.</ins></p>
+  <p><sub>El elemento HTML &lt;sub&gt; define el texto en subindice o subindicado. Este tipo de texto aparece medio caracter por debajo de la linea normal y mas pequeña, se usa para escribir formulas quimicas</sub> H<sub>2</sub>O.</p>
+  <p><sup>El elemento HTML &lt;sup&gt; define el texto en superindice o superindicado. Este tipo de texto aparece medio caracter por arriba de la linea normal y mas pequeña, se usa para escribir notas al pie.</sup> Ikigai<sup>1</sup></p>
+</section>
+<hr>
+<section>
+  <h2>Citas</h2>
+  <p>quote y cites son 2 palabras inglesas que significa lo mismo (cita) pero se usan en contextos diferentes, por eso existen 3 elementos HTML para citar y lo veremos a continuacion con ejemplos.</p>
+  <h3>&lt;blockquote&gt;</h3>
+  <blockquoete cite="https://developer.mozilla.org/es/docs/Web/HTML/Element/blockquote">
+    blockquote -cita en bloque . Crea citas en bloque, marca las citas a otros autores o documentos.
+Sus etiquetas son: &lt;blockquote&gt y &lt;blockquote&gt (ambas obligatorias).
+
+Está definido como: Elemento en bloque.
+
+Crea una caja: En bloque.
+
+Puede y debe contener: Uno o más elementos en bloque o script
+
+Con un doctype transicional Puede contener: texto, y/o cero o más elementos en bloque o en línea
+    </blockquoete>
+  <p>Se recomienda poner el atribute cite con el link de la fuente asi: &lt;blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Element/blockquote"&gt</p>
+  <h3>&lt;q&gt;</h3>
+    <q cite="https://developer.mozilla.org/es/docs/Web/HTML/Element/q">El elemento HTML &lt;q&gt; indica que el texto adjunto es una cita corta en línea.</q>
+  <p>Como en el caso anterior se recomienda citar la fuete</p>
+  <h3>&lt;abbr&gt;</h3>
+  <p>la etiqueta &lt;abbr&gt; se usa para definir las abreviaciones o un acronimo como <q>WWF</q>,<q>WWE</q>,<q>RENAPER</q>,<q>CONMEBOL</q>, etc.</p>
+  <p>Se recomeinda colocar el atributo title con el nombre completo de la abreviacion. Por ejemplo La <abbr title="Asosiacion de Futbol Argentino">AFA</abbr> es la maxima autoridad de futbol en Argentina.</p>
+  <h3>&lt;address&gt;</h3>
+  <p>Este elemento muestra la infomacion de contacto de el/la autor/a de un articulo, seccion o pagina. La infoamcion de contacto puede ser su email, domicilio, telefono, redes socailes, etc.</p>
+  <address>
+    P. Sherman,<br> 42 Wallaby Way,<br> Sydney, Australia.
+  </address>
+  <h3>&lt;cite&gt;</h3>
+  <p>Esta etiqueta sirve para citar el titulo de una obra de otro autor y sea un libro, una pelicula, una serie, etc. Generalemnte los anvegadores lo muentras en italic o cursiva.</p>
+  <cite>Harry Potter y las reliquias de la muerte</cite> es el ultimo libro de la saga.
+  <h3>&lt;bdo&gt;</h3>
+  <p>Esta etiqueta sirve para cambiar la direccion de la escritura de texto, anula el algoritmo de bi-direcion (BDO por sus siglas en ingles Bi-Directional Override).</p>
+  <p>Para indicar la direccion se debe usar el atributo dir. Ejemplo:</p>
+  <bdo dir="ltr">dir="ltr" el texto vade izquieda a derecha</bdo><br>
+  <bdo dir="rtl">dir="rtl" el texto va de derecha a izquierda</bdo>
+</section>
+<hr>
+<section>
+  <h2>Comentarios HTML</h2>
+  <p>Para ver esta seccion inspecciona la pagina.</p>
+  <!--Los comentarios HTML sirven para poner notas o esconder contenido en el codigo ya que el navegador no los muestra.-->
 </section>
 </body>
 </html>
