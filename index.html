@@ -2,79 +2,106 @@
 <html>
 <head>
 <title>HTML</title>
+  <style>
+    table, th, td {
+      border: 2px solid green;
+    }
+  </style>
 </head>
+<header style="text-align:center;font-size: 30px;">HTMLapb</header>
 <body style="background-color:orange;">
 <!-- En los comentarios estaran las respuestas del HTML Quiz de W3SCHOOL-->
-
+  
 <h1>HTML</h1>
 <section>
 <!--Respuesta pregunta 1-->
 <p>HTML (HyperText Markup Language en ingles) es el lenguaje de marcado estandar para crear paginas web en cualquier editor de texto, es su estructura. Consta de una serie de elementos(HTML) que le dicen al navegador como mostrar el contenido por medio de las etiquetas.</p>
+  
 <h2>Elemetnos HTML</h2>
+  
 <p>Un elemento HTMl es el conjunto conformado por la etiqueta de inicio &lt;etiqueta&gt;, el contenido (h1, body, p, etc) y la etiqueta de cierre &lt;/etiqueta&gt;.El nombre de las etiqeutas puede ir tanto en &lt;minuscula&gt; como en &lt;MAYUSCULA&gt;</p>
-<p>A continuacion se mostrara los elementos HTML mas comunes.</p><br>
-<strong>&lt;!DOCTYPE html&gt;</strong>
+<p>A continuacion se mostrara los elementos HTML mas comunes.</p>
+  
+<h3>&lt;!DOCTYPE html&gt;</h3>
 <p>Este elementos define que este archivo es un documento HTML.</p>
-<strong>&lt;html&gt;</strong><br>
+  
+ <h3>&lt;html&gt;</h3>
 <p>Es el elemento base de una pagina HTML.</p>
-<strong>&lt;head&gt;</strong><br>
+  
+<h3>&lt;head&gt;</h3>
 <p>Es el elemento que contiene la meta informacion de la pagina.</p>
-<strong>&lt;title&gt;</strong>
+  
+<h3>&lt;title&gt;</h3>
 <p>Este elemento define el titulo de la pagina web que se vera en la pestaña del navegador.</p>
-<strong>&lt;body&gt;</strong><br>
+  
+<h3>&lt;body&gt;</h3>
 <p>Es el elemento que define el cuerpo del documento y que muestra todos los elementos visibles(fotos,videos,tablas, links, etc).</p>
-<strong>&lt;h1, h2, h3, h4, h5, h6&gt;</strong><br>
+<h3>&lt;h1, h2, h3, h4, h5, h6&gt;</h3>
 <p>Es el elemento que define los encabezados y van desde  el 1 (el pirnicpal) hasta el 6(menos important).</p>
-<strong>&lt;p&gt;</strong><br>
+  
+<h3>&lt;p&gt;</h3>
 <p>Es el elemento que define los parrafos.</p>
-<strong>&lt;a&gt;</strong><br>
+  
+<h3>&lt;a&gt;</h3>
 <p>Es el elemento que define los links o enlaces hacia otras paginas.</p>
-<strong>&lt;img&gt;</strong><br>
-<p>Es el elemento que define las imagenes.</p>
+  
+<h3>&lt;img&gt;</h3>
+<p>Es el elemento que define las imagenes, es uan etiqueta vacia.</p>
+  
 <p>Los elementos HTML pueden contener otro elementos, por ejemplo dentro de elemento &lt;body&gt; puede haber otro elementos como el &lt;h1&gt;, &lt;p&gt;, &lt;section&gt;, etc.</p>
-<p><strong>No olvidar poner  la &lt;/etiqueta de cierre&gt;</strong> a menos que sea un elemento vacio como </p>
+<p><strong>No olvidar poner  la &lt;/etiqueta de cierre&gt;</strong> a menos que sea un elemento vacio como &lt;img&gt;.</p>
 </section>
+  
 <hr>
+  
 <section>
-<h2>Atributos</h2>
+<h2 id="atributos">Atributos</h2>
+  
 Los elementos HTML tienen atributos, estos muetran infroamcion adicional sobre los elemnetos HTML, siempre se colocan en la etiqueta de inicio. Generlamente se escriben asi : <strong>nombre="valor"</strong>
 <h3>Algunos atributos comunes</h3>
-<strong>href</strong>
+  
+<h3>href</h3>
 <p>La etiqueta &lt;a&gt; define que el elemneto es un enlace o link y a una pagina y href es la URL de esa pagina. si Se coloca # en el valor, el navegador vuelve al principio de la pagian sin cambiar de pestaña. Ejemplo <a href="#">Click here</a>.</p>
-<strong>src y alt</strong>
-<p>La etiqueta &lt;img&gt; se usa para colocar imagenes en una pagina web y el atributo src es la ruta a la imagen que se muestra. Hay 2 formas de especificar la URL:
-<p>
-<em><sub>URL absoluta:</></em> son links a imagenes alojdas en otro sitio (ejemplo src="https://www.w3schools.com/images/img_girl.jpg"), 
-<p><i>No se recomienda porque hay imagenes protegida spor copyright y usarlas sin autorizacion viola los derechos de autor.</i></p>
-<p><em>URL relativa:</em> son link a iamgenes que estan dentro la pagina web. Ejemplo:  src="img_girl.jpg".</p>
-</p>
-<p>En caso de que la imagen no pueda mostrar el atributo <strong>alt</strong> mostrara un texto alternativo. (ejemplo src="https://www.w3schools.com/images/img_girl.jpg" añt="girl").</p>
-  <strong>width</strong> y <strong>height</strong>
+  
+<h3>src y alt</h3>
+<p>La etiqueta &lt;img&gt; se usa para colocar imagenes en una pagina web y el atributo src es la ruta a la imagen que se muestra. Hay 2 formas de especificar la URL si la imagen esta en un sitio web:
+<ul>
+<li><ins>URL absoluta:</ins> son links a imagenes alojdas en otro sitio, van siempre con el https://, (ejemplo src="https://www.w3schools.com/images/img_girl.jpg") , 
+<p><i>No se recomienda porque hay imagenes protegidas por copyright y usarlas sin autorizacion viola los derechos de autor.</i></li></p>
+<li><ins>URL relativa:</ins> son link a iamgenes que estan dentro la pagina web. Ejemplo:  src="img_girl.jpg".</li>
+</ul>
+<p>En caso de que la imagen no pueda mostrar el atributo <strong>alt</strong> mostrara un texto alternativo. (ejemplo  <img src="https://www.w3schools.com/images/img_girl.jpg" alt="girl">).</p>
+  <p>Si la imagen esta en en uan subcarpeta se debe incluir de nombre dentro del <code>src</code>. Ejemplo src="/imagenes/htmlapb.jpg"</p>
+  <mark>Estos atributos forman la sintasis del elemento &lt;img&gt;</mark>
+  
+  <h3>width y height</h3>
   <p>Otro atributros de las imagenes son el width (ancho) y el height (largo) que sirve para dar indicar las medidas de estas propeidades. Ejmaplo width="253px" height="300"</p>
+  <mark>Estos atributos se pueden usar solos o dentro del atributo style</mark>
+  
   <hr>
-  <strong>Style</strong>
-  <p>Este atributo sirve para definir y cambiiar: </p>
+  <h3>Style</h3>
+  <p>Este atributo sirve para definir y cambiar: </p>
   <p style="color:red;">El color del texto style="color:red;".</p>
   <p style="background-color:red;">El color del fondo de la pagina o elemento HTML style="background-color:red;".</p>
   <p style="font-family:courier;"> La fuente del texto style="font-family:courier;".</p>
   <p style="font-size:100px;">El tamaño del texto style="font-size:100px;".</p>
   <p style="text-align:right;">La ubicacion del texto o elemento HTML style="text-align:right;".</p>
   <hr>
-  <strong>lang</strong>
+  <h3>lang</h3>
   <p>Este atributo sirve para definir el idioma. Si el atributo se encuentra dentro de la etiqueta &lt;html&gt; indicara que toda la pagina estara en ese idioma.</p>
   <code style="background-color:black;color:white;">&lt;html lang="en"&gt;</code>
     <p>se puede especificar el pais: </p>
-    &lt;html lang="en-US"&gt;<br>
-    <sub style="background-color: blue;color:white;">En este caso se define como ingles el idioma y Estados Unidos el pais.</sub>
+    <mark>&lt;html lang="en-US"&gt;</mark><br>
+    <sub>En este caso se define como ingles el idioma y Estados Unidos el pais.</sub>
   </p>
-  <p>Tambien se puede agregar este atributo a un elemento HTMl para espeficar el idiomaen ese elemento</p>
+  <p>Tambien se puede agregar este atributo a un elemento HTMl para especificar el idioma en ese elemento</p>
   <p>Ejemplo:<code>&lt;h1 lang="en-US"&gt;</p></code>
-<strong>title</strong>
+<h3>title</h3>
   <!--Respuesta pregunta 2-->
   <p>Este atributo sirve para dar una informacion extra sobre un elemento.Aparececomo un tooltip cuando el mouse se coloca sobre el elemento</p>
   <p title="tooltip">Ejemplo</p>
 <h4>Notas y sugerencias</h4>
-<p>Al igual que los nombres de los elementos HTML, losatributospueden ir tanto enminuscula como en MAYUSCULA</p>
+<p>Al igual que los nombres de los elementos HTML, los atributos pueden ir tanto en minuscula como en MAYUSCULA</p>
 <p>Se recomienda usar comillas ("") al uar citas</p>
 <p>Se puede usar tanto comillas simples(') como dobles("") para los valores el atributo. Si el texto ya tiene comillas se recoemida usar ambas</p>
 <p>Ejemplo: <code>&lt;p title="Harry 'el sucio' Potter"&gt;<br>
@@ -161,14 +188,14 @@ Con un doctype transicional Puede contener: texto, y/o cero o más elementos en 
   <p>Como en el caso anterior se recomienda citar la fuete</p>
   <h3>&lt;abbr&gt;</h3>
   <p>la etiqueta &lt;abbr&gt; se usa para definir las abreviaciones o un acronimo como <q>WWF</q>,<q>WWE</q>,<q>RENAPER</q>,<q>CONMEBOL</q>, etc.</p>
-  <p>Se recomeinda colocar el atributo title con el nombre completo de la abreviacion. Por ejemplo La <abbr title="Asosiacion de Futbol Argentino">AFA</abbr> es la maxima autoridad de futbol en Argentina.</p>
+  <p>Se recomeinda colocar el atributo title con el nombre completo de la abreviacion. Por ejemplo: La <abbr title="Asosiacion de Futbol Argentino">AFA</abbr> es la maxima autoridad de futbol en Argentina.</p>
   <h3>&lt;address&gt;</h3>
   <p>Este elemento muestra la infomacion de contacto de el/la autor/a de un articulo, seccion o pagina. La infoamcion de contacto puede ser su email, domicilio, telefono, redes socailes, etc.</p>
   <address>
     P. Sherman,<br> 42 Wallaby Way,<br> Sydney, Australia.
   </address>
   <h3>&lt;cite&gt;</h3>
-  <p>Esta etiqueta sirve para citar el titulo de una obra de otro autor y sea un libro, una pelicula, una serie, etc. Generalemnte los anvegadores lo muentras en italic o cursiva.</p>
+  <p>Esta etiqueta sirve para citar el titulo de una obra de otro autor y sea un libro, una pelicula, una serie, etc. Generalemnte los navegadores lo muentran en italic o cursiva.</p>
   <cite>Harry Potter y las reliquias de la muerte</cite> es el ultimo libro de la saga.
   <h3>&lt;bdo&gt;</h3>
   <p>Esta etiqueta sirve para cambiar la direccion de la escritura de texto, anula el algoritmo de bi-direcion (BDO por sus siglas en ingles Bi-Directional Override).</p>
@@ -180,7 +207,391 @@ Con un doctype transicional Puede contener: texto, y/o cero o más elementos en 
 <section>
   <h2>Comentarios HTML</h2>
   <p>Para ver esta seccion inspecciona la pagina.</p>
-  <!--Los comentarios HTML sirven para poner notas o esconder contenido en el codigo ya que el navegador no los muestra.-->
+  <!--Los comentarios HTML sirven para poner notas y/o recordatorios o esconder contenido en el codigo ya que el navegador no los muestra.-->
+  <!--
+<h1>otro ejemplo</h1>
+<p>este es otro ejemplo para esconder codiogo</p>
+-->
+  <!-- 
+Como se peude ver para agregar comentario se debe escribir asi: <!-- ejemplo-->
 </section>
-</body>
+<hr>
+<section>
+  <h2>Los colores HTML</h2>
+  <p>Los colores sirven apra cambiar:</p>
+  <h3>El color del texto</3>
+  <p style="color:white;">El color del texto por el nombre.Por Ejemplo este texto esta escrito con el siguiente atributo y valor: style="color:white;"</p>
+  <h3>El color de fondo del texto o pagina</h3>
+  <p style="background-color:#7FFFD4;">El color del fondo del texto por el codigo de color RGB(Red, Green, Blue).Por Ejemplo este texto esta escrito con el siguiente atributo y valor: style="background-color:#7FFFD4;"</p>
+  <h3>El color del borde</h3>
+  <p style="border: solid 2px rgb(255, 99, 71);">El color del forde del texto por el codigo de color RGB(Red, Green, Blue).Por Ejemplo este texto esta escrito con el siguiente atributo y valor: style="border: solid 2px rgb(255, 99, 71);"</p>
+</section>
+<hr>
+<section>
+  <h2 id="CSS">CSS</h2>
+  <p>Si el <abbr title="HyperText Markup Lenguage">HTML </abbr>da estructura a la pagina web, el<abbr title="Cascading Style Sheets.">CSS</abbr>(hojas de estilo en cascada por sus siglas en ingles) le da estilo al sitio cambiandole los colores del fondo y del texto. Tambien permite modificar la fuente y el tamaño de esta asi como la distrucion y el espacio entre elementos</p>
+  <strong style="color:red;background-color:black;">IMPORTANTE: Se dice que el estilo se aplica en cascada porque si se aplica un background-color: red; a un &lt;section&gt; o &lt;div&gt;(elemento padre) se aplicara lo mismo a todos los elementos dentro de ese elemento (hijos)</strong>
+  <h3>Usando CSS</h3>
+  <p>Hay 3 formas de usar el CSS</p>
+  <ul>
+    <li><b>Online o en linea:</b> Se usa para aplicar un estilo a un solo elemento HTML a traves del atributo style.<br> Por ejemplo: &lt;body background-color:red;&gt;&lt;/body&gt; </li><br>
+    <li>Interno: se usa para aplicar estilo a una sola pagina web, se escribe el style en el &lt;head&gt;.<br>
+      Ejemplo: <pre>
+&lt;head&gt;
+&lt;style&gt;
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+&lt;style&gt;
+&lt;/head&gt;
+      </pre>
+      <sub>En este caso se va a aplicar un color de fondo azul y el h1 y el p va a tener un texto de color azul y rojo respectivamente</sub>
+    </li>
+    <li>
+      <p><b>Externo:</b> Sirve para darle estilo a varias paginas, para usar una hoja de estilo externa se debe agregar un link de cada pagina en el &lt;head&gt;.</p>
+      Ejemplo: <pre>
+&lt;head&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+      </pre>
+      <p>En este caso la la hoja de estilo se vincula en la misma carpeta que la pagina actual. Tambien peude ser enlazada con una unicada en ka carpeta HTML del sitio web local (&lt;link rel="stylesheet" href="/html/styles.css"&gt;) o por una URL (&lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;)</p>
+      <p>La hoja de CSS puede escribirse en cualquier editor de texto, no debe contenr ningun codigo HTML y debe ser guardado como un archivo .css</p>
+      <p>Asi se ve un y escribe en un archivo style.css </p>
+      <pre style="background-color:black; color: white;">
+        body {
+        background-color: powderblue;
+        }
+        h1 {
+          color: blue;
+        }
+        p {
+          color: red;
+        }
+      </pre>
+    </li>
+  </ul>
+  
+  <h3>Colores, fuente, tamañosy mas en CSS</h3>
+  <p>A continucion veremos las propiedades de CSS mas comunes:</p>
+  <p style="color:green"><code>color</code> es la propiedad para cambiar el color del texto.<p>
+  <p style="font-family:calibri;"><code>font-family</code> es la propeidad para cambiar la fuente del texto.</p>
+  <p style="font-size:25px;"><code>font-size</code> es la propeidad para cambiar el tamaño del texto.</p>
+  <p style="border:2px solid green;"><code>border</code> es la propeidad para definir tamaño, patron y colordel borde del texto o elemento.</p>
+  <p style="padding:30px;"><code>padding</code> (relleno) es la propeidad para definir el espacio entre el texto y el borde.</p>
+  <p style="margin:30px;"><code>margin</code> es la propeidad para cambiar el tamanño del margen (espacio) fuera del borde.</p>
+</section>
+<hr>
+<section>
+  
+  <h2>Links HTML</h2>
+  <p>Los links HTML permiten pasar de una pagina a otra u otro documento, son hiperlinks. Cuando el mouse apsa por un link se coviente en una <a href="#">mano</a>. Tambien las iamgenes o cualquier otro elemento HTML puede ser un link. la sintaxis de los links es la siguite: &lt;a href="URL"&gt;Nombre link&lt/a&gt; </p>
+  <p>Dentro del atributo href puede ir el URL absoluto de la pagina(direccion web completa), para un link local, dnetro de la misma pagian se usa el URL relativo (sin el https://www</p>
+  
+  <h3>El atributo target</h3>
+  <p>Por defecto al ar click en un link se abrira en la pestaña o ventanda actual, para cambiar el destino (target) se debe especificar con el atributo target</p>
+  <p>Este atributo puede tener estos valores:</p>
+  <ul>
+    <li>_self (Este es por defecto, abre el documento en la misma pagina o documento <a href="https://www.w3schools.com/html/html_links.asp" target="_self">Ejemplo</a>)</li>
+    <li>_blank (Abre el documento en una nueva pagina o documento <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">Ejemplo</a>)</li>
+    <li>_parent (Abre el documento en marco o parent principal <a href="https://www.w3schools.com/html/html_links.asp" target="_parent">Ejemplo</a>)</li>
+    <li>_top (Abre el documento en una nueva ventana <a href="https://www.w3schools.com/html/html_links.asp" target="_top">Ejemplo</a>)</li>
+  </ul>
+  
+  <h3>Link en otros elementos</h3>
+  
+  <h4 id="linkimg">En una imagen</h4>
+  <p>Para lograr esto basta con solo escribir el elemento &lt;img&gt; dentro del alemento &lt;a&gt;.</p>
+  <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU"></a>
+  <p><sub>Ejemplo: &lt;a href="#"&gt;&lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU"&gt;&lt;/a&gt;</sub></p>
+  
+  <h4>Link en un email</h4>
+  <p>Con el atributo <code>mailto</code> dentro del href se crea un link para enviar un email al usuario. Ejemplo:</p>
+  <a href="mailto:javiervie12@gmail.com">&lt;a href="mailto:example@gmail.com"&gt;Ejemplo&lt;/a&gt;</a>
+  
+  <h4>Boton como link</h4>
+  <p>Para hacer esto se debe agregar un codigo <a hre="#">JavaScript</a> ya que permite especificar que sucede con ciertos eventos. Tambien se peude hacer el boton con CSS.</p>
+  <button onclick="document.location='default.asp'">Ejemplo</button>
+  
+  <h4>En el titulo</h4>
+  <p>Con el atritubuto <code>title</code> se muestra informacion extra sobre un elemento y se lo muestra como un tooltip cuando el mouse se posa sobre elemento.</p>
+  Ejemplo:  <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit the HTML Tutorial of W3Schools</a> 
+
+<hr>
+<h3>Colores de los links HTML</h3>
+<p>Los navegadores mostraran los links con los siguientes colores por defecto:</p>
+  <p><ins style="color:blue;">Si no fue visitado se mostrara subrayado y letra azul</ins>, <ins style="color:purple;">si fue visitado se mostrara subrayado y con letra violeta</ins> y <ins style="color:red;">si el link este activo se mostrara subrayado con letra roja</ins></p>
+  <p>Los colores de la fuente y el subrayado se peude cambiar con CSS.</p>
+  
+  <h3>Creando bookmarks</h3>
+  <p>Con los link HTML se éuden crear marcadores (bookmarks en ingles) para que los lectores puedan ir a una parte especifica de la pagina web. Para crear un marcador hay que usar el atributo <code>id</code> a donde queremos ir, luego se agrega el link. Ejemplo:</p>
+  <a href="#atributos">ir a atributos</a>
+  <p>Tambien puede saltar a otra pagina</p>
+</section>
+
+<hr>
+
+<section>
+  <h2>Imagenes HTML</h2>
+  <p>Para ver los atributos y la sintasis de las imagenes ir a <a href="#atributos">atributos</a></p>
+  
+  <h3>gif en html</h3>
+  HTML permite agregar GIF. Ejemplo: &lt;img src="https://educacion30.b-cdn.net/wp-content/uploads/2019/06/homer.gif" alt="homer gif"&gt;
+  <img style="width: 200px;"src="https://educacion30.b-cdn.net/wp-content/uploads/2019/06/homer.gif" alt="homergif">
+  
+  <h3>Imagenes con link</h3>
+  <a href="#linkimg">ver esta seccion</a>
+  
+  <h3>imagenes flotantes</h3>
+  <p>Con la propiedad <code>float</code> se puede colocar una imagen</p>
+  <p style="display:flex;"><img src="https://cdn-icons-png.flaticon.com/512/3916/3916837.png" style=" width: 150px;float:left;"> a la izqueirda o a la derecha
+  <img src="https://www.nicepng.com/png/detail/19-195228_arrow-right-comments-arrow-right-side.png" style=" width: 150px;float:right;"></p>
+  <hr>
+  <h3>Mapa de imagenes HTML</h3>
+  <p>Con la etiqeuta <code>map</code> se peude crear un mapa de imagenes, significa que es una imagen con areas donde puede el usuario puede hacer click y segun donde se lo haga, hara difetenres cosas. A continuacion haremos un mapa de imagenes</p>
+  <p>1ro ponemos la imagen usando el elemento &lt;img&gt; y ademas el atributo <code>usemap</code> asi: &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;. El valor <code>usemap</code> inicia con # y el nombre del mapa de imagenes para crear el link entre la iamgen y el mapa.</p>
+  <img src="https://ventas.teorema-rd.com/wp-content/uploads/2020/05/Html5-JS-css-logo.jpg" alt="js,html,css" usemap="#dev">
+  <p>Luego agregamos el elemento &lt;map&gt. Este elemento sirve para crear el mapa y se vincula a la imagen con el atributo <code>name</code> que debe tener el mismo nombre que el usemap. Ejemplo &lt;map name="#wormap"&gt;</p>
+  <p>Ahora debemos agregar las areas donde poder hacer click con el elemento &lt;area&gt;</p>
+  <h4>Formas (shapes) de las areas</h4>
+  <p>Las areas donde se debe dar click se debe definir con el atributo shape y uno de estos valores:</p>
+  <ul>
+    <li><ins>rect:</ins> Define un area rectangular. Se toma las coordenadas (&lt;coords&gt;) de la esquina superior izquierda y la inferior derecha y se anota los pares por ejemplo <mark style="background-color:red;">22</mark>,<mark style="background-color:white;">30</mark>,<mark style="background-color:red;">170</mark>,<mark style="background-color:white;">150</mark>. </li>
+    <li><ins>circle:</ins> Define un area circular. Se debe tomar la coordenada del centro del circulo y luego el radio del circulo. Se anota asi <mark style="background-color:red;">445</mark>, <mark style="background-color:white;">270</mark>,44 </li>
+    <li><ins>poly:</ins> Define una area poligonal. De esta manera se puee crear cualquier figura a traves de lineas rectas (poligonos)</li>
+    <li><ins>default:</ins> Defina toda la region</li>
+  </ul
+    <b><ins>Notas:</ins></b> <i>Para cosneguir las coordenadas de una iamgen se debe usar algun programa de diseño grafico (GIMP, photoshop,etc). los numeros marcados en rojo representan las coordendas del eje x y se toman desde el margen izquierdo hasta el punto y los numeros rojos representan el eje Y, se toma dede el borde superior. Para una iamgen polignoal se debe toamr todas las coordenadas de los bordes de la figura. <a href="https://www.w3schools.com/html/html_images_imagemap.asp">Ver ejemplo</a></i>
+  <map name="dev">
+    <area shape="rect" coords="237,227,470,532" alt="HTML" href="#">
+    <area shape="rect" coords="532,121,771,459" alt="JS" href="#">
+    <area shape="rect" coords="841,231,1071,574" alt="CSS" href="#">
+  </map>
+  <div style="background-image: url('https://akus.b-cdn.net/imagenes/articulos/historia-y-origen-de-html.jpg');">
+    <h3>Imagenes de fondo</h3>
+    <p>Una iamgen se peude poner como imagen de fondo(background-image) tanto a un elemento, como en este caso, como a toda la pagina web.</p
+    <p>Para poner una imagen de fondo a un elemento hay que poner el atributo <code>style</code> y poner valor <code>background-image: url('ejemplo');</code> todo entre comillas.</p>
+    <p>Tambien puede colocarse en el <code>&lt;head&gt;</code> <a href="#CSS">ver ejemplos aqui.</a></p>
+    <p>Para colocar una iamgen de fondo en una apgina se debe colcoar en el <code>&lt;body&gt;</code></p>
+    <h4>Background repeat</h4>
+    <p>Cuando la iamgen de fondo es mas pequeña que el elemento la imagen se repetira hcia todos los bordes hasta ocupar todo el elemento. Cmo ocurre con este elemento.</p>
+    <p>Para evitar que se repita la iamgen se debe usar el atributo y valor <code>background-repeat: no-repeat;</code></p>
+    <h4>Background cover</h4>
+    <p>Para que una iamgen ocupe todo el elemento, como de una portada se tratase, se debe usar los siguientes atributos y valores <code>background-size: cover;</code> y para aasegurarse que todo el elemento este cubierto se debe poner <code>background-attachment:fixed;</code> asi la imagen de fondo cubrita todo el elemento sin estirarse</p>
+    <p>Para que la iamgen se estire hasta ocupar todo el elemento se debe poner asi: <code>background-size: 100%;</code></p>
+    <small>Veremos mas de esto en CSS.</small>
+  </div>
+  <h3>El elemento &lt;picture&gt;</h3>
+  <p>Este elemento sirve para especificar recursos de imagenes. Tiene mas de uno o mas elementos <code>&lt;source&gt;</code> y cada cual hace referencia a diferentes iamgenes con el atributo <code>&lt;srcset&gt;</code> y cada uno de estos tiene su propio <code>&lt;media&gt;</code> para que el navegador elija la omagen que mejor se adapte al dipositivo. Ejemplo:</p>
+  <pre style="background-color: white;">
+  &lt;picture&gt;
+  &lt;source media="(min-width: 650px)" srcset="img_food.jpg"&gt;
+  &lt;source media="(min-width: 465px)" srcset="img_car.jpg"&gt;
+  &lt;img src="img_girl.jpg" style="width:auto;"&gt;
+  &lt;picture&gt;
+  </pre>
+  <picture>
+  <source media="(min-width: 650px)" srcset="https://lh4.googleusercontent.com/mJsFLkW3nTYFcMC11QvOqZIQlkY3_yp27L6ARigU-pBllrgGlgN5z0z6_YQQlKO39Gqujwbm1du76tcHR-YLoDCOLCTOmtQ6IyX-lO03xgKFvyn77yLr2TvFzCoMQPOv8m_Z-zw">
+  <source media="(min-width: 465px)" srcset="https://lh3.googleusercontent.com/vMnInyKh_Rnz_pV-twD0KcDOyphgbnAy0dxB2kh2LHiNXG44URHn-JHlTDTFMlErsHBKDlMkVOcSTHmoaIXZ-vDJEWgr63DXu0586f4w77vhtVem1g4KoVMbHXqxfpGmQLeyLac">
+  <img src="img_girl.jpg" style="width:auto;">
+</picture>
+  <p>Se suele usar este elemento cuando el dispositivo es chico o cuando el navegador no admite un formato especifico de iamgenes, en ese caso mostrara los elementos &lt;picture&gt;</p>
+</section>
+<section>
+  <h2>HTML favicon</h2>
+  <p>El favicon es una pequeña imagen que se muestra al lado del titulo de la pagina en las pestaña del navegador. Se peude usar cualqueir imagen como favicon o crear uno <a href="https://www.favicon.cc/">aqui</a>.</p>
+  <p>Para agregar el favicon a la pagina web se debe guardar en ka misma carpeta del index.html con formato .ico (ejemplo: imagen.ico). Otra forma es meidante la etiqueta &lt;link&gt; con los atributl rel, type y href en ek &lt;head&gt;. Ejemplo</p>
+  &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;
+</section>
+
+<hr>
+
+<section>
+  <h2>Tablas</h2>
+  <table>
+    <caption>La etiqueta &lt;table&gt; sirve para crear tablas divididas en celdas y columnas como esta.</caption>
+    <thead>
+      <tr>
+        <th style="border:green solid">Etiqueta</th>
+        <th style="border:green solid">Explicacion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&lt;caption&gt;</td>
+        <td>Es para darle titulo a la tabla</td>
+      </tr>
+      <tr>
+         <td>&lt;thead&gt;</td>
+        <td>Es para definir el conjunto de de filas(rows) que definen el encabezado de la tabla</td>
+      </tr>
+      <tr>
+         <td>&lt;tr&gt;</td>
+        <td>Significa fila de tabla (Table Row) y es para colcoar las filas (rows).</td>
+      </tr>
+      <tr>
+         <td>&lt;th&gt;</td>
+        <td>Sirve para colocar uan celda de la tabla.Para que la primera celda sea encabezado de una tabla se debe usar este elemento.Por defecto los &lt;th(gt; esta en negrita y el texto centrdo.</td>
+      </tr>
+      <tr>
+         <td>&lt;td&gt;</td>
+        <td>Significa tabla de datos (Table Data) y sirve para crear celdas (cells)</td>
+      </tr>
+      <tr>
+         <td>&lt;col&gt;</td>
+        <td>Sirve para crear columnas y espeficicar sus propiedades.</td>
+      </tr>
+      <tr>
+         <td>&lt;colgroup&gt;</td>
+        <td>Sirve para crear una o mas columnas y espeficicar sus propiedades.</td>
+      </tr>
+      <tr>
+         <td>&lt;tbody&gt;</td>
+        <td>Sirve para agrupar el contenido del cuerpo de uan tabla.Todo lo que esta aqui forma parte del &lt;tbody&gt;</td>
+      </tr>
+      <tr>
+         <td>&lt;tfoot&gt;</td>
+        <td>Especifica contenido resumido de las columnas de la tabla.</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Se uso borde verde para mostrar mejor los contenidos de una tabla. Esto es parte del &lt;tfoot&gt;</td>
+      </tr>
+    </tfoot>
+  </table>
+  <h3>Bordes de la tabla </h3>
+  <p>Los bordes de una tabla se pueden modificar mediante el CSS para cambiar el color, tamañan y forma de cada celda. se recomienda usarlos en &lt;table&gt;, &lt;th&gt; y &lt;td&gt; </p>
+  <table style="border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th>Atributo</th>
+        <th>Efecto</th>
+      </tr>
+    </thead>
+    <tbody>
+       <td>border-collapse: collapse;</td>
+       <td>Esta propeidad sirve para que no haya doble borde en cada celda, como en el cuadro anterior.</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+    <table>
+      <caption>atributo style</caption>
+    <thead>
+      <tr>
+        <th>Valor</th>
+        <th>Efecto</th>
+        <th>Ejemplo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>background-color</td>
+       <td style="background-color:white;">Este valor sirve para cambiar el color del fondo de la tabla, celda o columna.</td>
+        <td style="background-color:white;">style="background-color:white;"</td>
+      </tr>
+       <tr>
+       <td>border</td>
+       <td>Este valor sirve para cambiar el color del borde de la tabla.</td>
+        <td style="border: solid red;">style="border: solid red;"</td>
+      </tr>
+      <tr>
+       <td>width</td>
+       <td>Este valor sirve para cambiar el ancho de la celda o tabla.</td>
+        <td style="width:50%">style="width:50%;"</td>
+      </tr>
+      <tr>
+       <td>heigth</td>
+       <td>Este valor sirve para cambiar el largo de la celda o tabla..</td>
+        <td style="height:100px">style="height:100px;"</td>
+      </tr>
+            <tr>
+       <td>text-align</td>
+       <td>Este valor sirve para cambiar la ubiacion del texto.</td>
+        <td style="text-aling: left;">style="height:100px;"</td>
+      </tr>
+      <tr>
+       <td>padding</td>
+       <td>Este valor sirve para cambiar el relleno (padding) de las celdas. se puede agregar direccion del padding: <ul><li>padding-top</li><li>padding-bottom</li><li>padding-left</li><li>padding-right</li></ul></td>
+        <td style="padding: 10px;">style="padding:10px;"</td>
+      </tr>
+            <tr>
+       <td>border-spacing</td>
+       <td>Este valor sirve para cambiar el espacio entre celdas.</td>
+        <td style="border-spacing: 10px;">style="border-spacing:10px;"</td>
+      </tr>
+    </tbody>
+  </table>
+<br>
+    <table>
+    <thead>
+      <tr>
+        <th>Atributo</th>
+        <th>Efecto</th>
+        <th>Ejemplo</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>border-radius</td>
+       <td>Esta propeidad sirve para redondear las esquinas de la tabla.</td>
+        <td style="border-radius: 10px;"></td>
+      </tr>
+       <tr>
+       <td>colspan</td>
+       <td>Esta propeidad sirve para que un enbezado ocupe 2 o mas columnas.</td>
+       <th colspan="2">ejemplo</th>
+      </tr>
+       <tr>
+       <td>rowspan</td>
+       <td>Esta propeidad sirve para que una celda ocupe 2 o mas filas.</td>
+       <th colspan="2">ejemplo</th>
+      </tr>
+    </tbody>
+  </table>
+<br>
+    <table style="background-color:white;">
+      <caption>el border-style sirve para cambiar el estilo de los bordes.</caption>
+    <thead>
+      <tr>
+        <th>Atributo</th>
+        <th>Efecto</th>
+        <th>Ejmplo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>dotted</td>
+       <td>Esta valor hace que la linea del borde sea punteada (dotted).</td>
+        <td style="border-style: dotted;"></td>
+      </tr>
+      <tr>
+       <td>dashed</td>
+       <td>Esta valor hace que la lineadel borde sea punteada pero mas gruesa (dashed).</td>
+        <td style="border-style: dashed;"></td>
+      </tr>
+       <tr>
+       <td>solid</td>
+       <td>Esta valor hace que la linea del borde sea una linea.</td>
+        <td style="border-style: solid;"></td>
+      </tr>
+      <tr>
+       <td>double</td>
+       <td>Esta valor hace que la linea del borde sea doble.</td>
+        <td style="border-style: double;"></td>
+      </tr>
+      <tr>
+       <td>groove, ridge, inset, outset</td>
+       <td>Estos valores hace que la linea del borde sea negra.</td>
+        <td style="border-style: groove;"></td>
+      </tr>
+      <tr>
+       <td>none, hidden/td>
+       <td>Estos valores sirven para que no haya borde.</td>
+        <td style="border-style: hidden;"></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 </html>
